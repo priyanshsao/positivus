@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+
+  --font-space: 'Space Grotesk','sans-serif';
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+
+@layer base {
+
+   html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+   }
+
+   body {
+      @apply 
+       font-space
+       text-[18px]
+       font-regular
+       text-black
+   }
+
+   h1 {
+      @apply
+         font-space
+         font-medium
+         text-6xl
+   }
+
+   h2 {
+      @apply
+         font-space
+         font-medium
+         text-[40px]
+   }
+
+   h3 {
+      @apply
+         font-space
+         font-medium
+         text-[30px]
+   }
+
+   h4 {
+      @apply
+         font-space
+         font-medium
+         text-[20px]
+   }
+
+   p {
+      @apply
+         font-space
+         font-regular
+         text-[18px]
+   }
+}
+
+@layer components{
+
+   .main{
+      @apply
+         grid 
+         grid-cols-1 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 
+         mx-6 sm:mx-10 md:mx-10 lg:mx-[50px] xl:mx-[100px] 
+         mt-5 sm:mt-7 md:mt-7 lg:mt-12 
+         gap-19 sm:gap-30 md:gap-0 lg:gap-10 /**/
+         overflow-hidden
+   }
+
+   .logo{
+      @apply
+       inline-flex 
+       items-center 
+       space-x-[13px] 
+       w-37 sm:w-45.5 md:w-37 lg:w-55
+       h-6  sm:h-7 md:h-6 lg:h-9
+   }
+
+   .hamburger{
+      @apply
+         inline-flex
+         items-center
+         w-7.5 md:w-10 
+         h-5 sm:h-auto md:h-5
+         lg:hidden
+   }
+
+   .navbar-labels{
+      @apply
+         hidden lg:flex  
+         items-center 
+         justify-center 
+         lg:gap-5 xl:gap-10
+   }
+
+   .hero-svg{
+      @apply
+      w-full  md:w-84 lg:w-150
+      h-75 sm:h-115 md:h-77  lg:h-129
+   }
+
+   .header{
+      @apply
+         flex
+         flex-col md:flex-row 
+         gap-4 sm:gap-14 md:gap-6 
+         md:justify-between
+         items-center
+   }
+
+   .header-element{
+      @apply
+         flex 
+         flex-col 
+         gap-16 sm:gap-14 md:gap-3 lg:gap-9 
+         md:w-[326px] lg:w-133
+          sm:h-fit
+         h-fit
+   }
+
+   .header-element-h{
+      @apply
+         font-medium 
+         text-[32px] sm:text-[48px] md:text-[36px] lg:text-6xl 
+         text-center sm:text-center md:text-start
+   }
+
+   .header-element-p{
+      @apply
+         font-regular 
+         text-[16px] sm:text-[32px] md:text-[16px] lg:text-[20px] 
+         leading-[18px] sm:leading-10 md:leading-5 lg:leading-7
+         text-center sm:text-center md:text-start
+         text-black
+         -mb-2.5 sm:m-0 
+   }
+}
+
+@layer utilities {
+
+   .text-nav{
+      @apply
+         lg:text-[20px]
+         text-black 
+         leading-7 
+         whitespace-nowrap
+   }
+}
