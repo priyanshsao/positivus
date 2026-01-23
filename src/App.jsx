@@ -82,8 +82,10 @@ function App() {
             
             <h1 className="header-element-h">Navigating the digital landscape for success</h1>
             <HeroSvg className="md:hidden"/>
+            <div className="space-y-4">
             <p className="header-element-p">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
             <Button2>Book a consultation</Button2>
+            </div>
           </div>
           
           <HeroSvg className="hidden md:flex"/>

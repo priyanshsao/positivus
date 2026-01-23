@@ -105,14 +105,14 @@
    .hero-svg{
       @apply
       w-full  md:w-84 lg:w-150
-      h-75 sm:h-115 md:h-77  lg:h-129
+      h-[w] sm:h-115 md:h-77  lg:h-129
    }
 
    .header{
       @apply
          flex
          flex-col md:flex-row 
-         gap-4 sm:gap-14 md:gap-6 
+          sm:gap-14 md:gap-6 
          md:justify-between
          items-center
    }
@@ -121,10 +121,9 @@
       @apply
          flex 
          flex-col 
-         gap-16 sm:gap-14 md:gap-3 lg:gap-9 
+         justify-between gap-4 sm:gap-14 md:gap-3 lg:gap-9 
          md:w-[326px] lg:w-133
-          sm:h-fit
-         h-fit
+         h-[screen-95px] md:h-fit
    }
 
    .header-element-h{
@@ -141,7 +140,6 @@
          leading-[18px] sm:leading-10 md:leading-5 lg:leading-7
          text-center sm:text-center md:text-start
          text-black
-         -mb-2.5 sm:m-0 
    }
 }
 
