@@ -79,7 +79,7 @@ function App() {
       <div className="hero">
         
         {/* Navbar */}
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-10 w-full">
           <div className="flex flex-1">
             <Logo/>
           </div>

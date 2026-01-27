@@ -124,8 +124,9 @@
          flex-col 
          gap-12 sm:gap-20 lg:gap-17.5 
          col-span-full
-         mt-20.5 sm:mt-25 
-         items-center
+         pt-20.5 sm:pt-25 
+         h-[screen] md:h-fit
+         items-center md:items-start
    }
 
    .hero-svg{
@@ -139,10 +140,10 @@
          flex
          flex-col md:flex-row 
          sm:gap-14 md:gap-6 
-         h-[screen-56px] sm:h-[screen-62px] md:h-fit
+         h-fit
          justify-center md:justify-between
-         items-center
-         max-w-[472px] 
+         items-center 
+         max-w-[472px] sm:max-w-none sm:w-full
    }
 
    .header-element{
@@ -151,7 +152,6 @@
          flex-col 
          justify-between gap-5 sm:gap-14 md:gap-3 lg:gap-9 
          md:w-[326px] lg:w-133
-         h-[screen-95px] md:h-fit
    }
 
    .header-element-h{
