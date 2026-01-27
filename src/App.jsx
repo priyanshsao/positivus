@@ -58,10 +58,28 @@ function App() {
 
   return (
     <>
-      <div className="hero flex flex-col gap-12 sm:gap-20 lg:gap-17.5 col-span-full">
+      {/* Navbar */}
+        <nav  className="absolute top-0 left-0 px-6 py-4 md:hidden w-full z-2 shadow-md">
+          <div className="flex items-center gap-10">
+            <div className="flex flex-1">
+              <Logo/>
+            </div>
+            <div className="navbar-labels">
+              <p className="text-nav">About us</p>
+              <p className="text-nav">Services</p>
+              <p className="text-nav">Use cases</p>
+              <p className="text-nav">Pricing</p>
+              <p className="text-nav">Blog</p>
+              <ButtonOutline>Request a quote</ButtonOutline>
+            </div>
+            <Hamburger/>
+          </div>
+        </nav>
+
+      <div className="hero">
         
         {/* Navbar */}
-        <nav className="flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-10">
           <div className="flex flex-1">
             <Logo/>
           </div>
@@ -82,9 +100,11 @@ function App() {
             
             <h1 className="header-element-h">Navigating the digital landscape for success</h1>
             <HeroSvg className="md:hidden"/>
-            <div className="space-y-4">
+            <div className="space-y-4 items-center">
             <p className="header-element-p">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-            <Button2>Book a consultation</Button2>
+            <div className="hero-btn">
+              <p className="text-h4-mob text-center">Book a consultation</p>
+            </div>
             </div>
           </div>
           
@@ -213,7 +233,7 @@ function App() {
           </div>
 
           {/* card-2 */}
-          <div className="flex w-175 justify-between items-center p-12.5 overflow-hidden rounded-[45px] border border-[#191A23] bg-[#B9FF66] shadow-[0_5px_0_0_#191A23]">
+          <div className="flex w-175 justify-between items-center p-12.5 overflow-hidden rounded-[45px] border border-[#191A23] bg-green shadow-[0_5px_0_0_#191A23]">
             {/* heading&link */}
             <div className="flex flex-col justify-center gap-23.25">
               {/* heading */}

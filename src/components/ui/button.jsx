@@ -1,6 +1,6 @@
 export const Button2 = ({children, className}) => {
     return (
-        <div className="flex gap-2.5 items-center justify-center px-8.75 py-5 rounded-[14px] w-full lg:w-fit bg-[#191A23] text-white">
+        <div className="flex items-center justify-center px-8.75 py-5 rounded-[14px] w-full lg:w-fit bg-[#191A23] text-white">
             <p className="text-[20px] leading-5">{children}</p>
         </div>
     );
