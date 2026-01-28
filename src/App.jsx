@@ -103,7 +103,7 @@ function App() {
             <div className="space-y-4 items-center">
             <p className="header-element-p">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
             <div className="hero-btn">
-              <p className="text-h4-mob text-center">Book a consultation</p>
+              <p className="text-h4-mob sm:text-h3 font-regular text-center">Book a consultation</p>
             </div>
             </div>
           </div>
