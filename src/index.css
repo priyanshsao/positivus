@@ -4,9 +4,13 @@
 
 @theme {
 
-  --color-green: "#B9FF66";
-  --color-grey: "F3F3F3";
-  --color-dark: "191A23";
+  --color-green: #B9FF66;
+  --color-grey: #F3F3F3;
+  --color-dark: #191A23;
+
+  --color-primary: var(--color-green);
+  --color-secondary: var(--color-grey);
+  --color-tertiary: var(--color-dark);
 
   --font-space: 'Space Grotesk','sans-serif';
 
@@ -78,6 +82,7 @@
          font-space
          font-regular
          text-p
+         leading-7
    }
 }
 
@@ -89,7 +94,7 @@
          grid-cols-1 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 
          mx-6 sm:mx-10 md:mx-10 lg:mx-[50px] xl:mx-[100px] 
          gap-19 sm:gap-30 md:gap-0 lg:gap-10 /**/
-         overflow-hidden
+         
    }
 
    .logo{
@@ -122,7 +127,7 @@
       @apply
          flex 
          flex-col 
-         gap-12 sm:gap-20 lg:gap-17.5 
+         gap-4 sm:gap-20 lg:gap-17.5 
          col-span-full
           
          items-center md:items-start
@@ -177,9 +182,10 @@
             flex
             items-center 
             justify-center 
-            px-8.75 py-5 
+            px-8.75 md:px-4
+            py-5 md:py-2
             rounded-default
-            w-full lg:w-fit 
+            w-full md:w-fit 
             bg-black
             text-white
    }
