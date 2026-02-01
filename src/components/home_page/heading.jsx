@@ -15,7 +15,7 @@ export const Heading = ({variant = "green", content = ["sample","data"], slots =
                 "flex flex-col w-fit gap-2.5 px-1.75 rounded-[7px]",
                 headingVariants[variant]
             )}>
-                <h2>{content[0]}</h2>
+                <h3>{content[0]}</h3>
             </div>
             )
         } else {
@@ -34,7 +34,7 @@ export const Heading = ({variant = "green", content = ["sample","data"], slots =
                                     )}
                                     key={index}
                                     >
-                                        <h2 className="truncate">{labelData}</h2>
+                                        <h3 className="truncate text-">{labelData}</h3>
                                     </div>
                                 )
                             } else {
@@ -45,7 +45,7 @@ export const Heading = ({variant = "green", content = ["sample","data"], slots =
                                     )}
                                     key={index}
                                     >
-                                        <h2 className="truncate">{labelData}</h2>
+                                        <h3 className="truncate">{labelData}</h3>
                                     </div>
                                 )
                             }

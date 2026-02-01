@@ -12,7 +12,7 @@ export const ServiceCard = ({content, link, header, imgSrc, bgColor}) => {
 
   return (
     <div className={clsx(
-        "flex max-w-175 justify-center w-full md:justify-between items-center p-12.5 overflow-hidden rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23]",
+        "flex max-w-175 justify-center w-full sm:justify-between items-center p-12.5 overflow-hidden rounded-[45px] border border-[#191A23] shadow-[0_5px_0_0_#191A23]",
         color[bgColor]
     )}>
       <div className="flex flex-col justify-center gap-10.5 md:gap-23.25">
