@@ -51,7 +51,7 @@ export const Link = ({
   children,
 }) => {
   const outerClass = clsx(
-    "flex w-fit gap-3.75 items-center",
+    "inline-flex w-fit gap-3.75 items-center",
     linkVariants[variant].outer,
     variant === "primary" && subPrimaryVariants[subVariant].outer,
     variant === "secondary" && subSecondaryVariants[subVariant]
