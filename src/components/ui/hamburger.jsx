@@ -31,7 +31,7 @@ export const Hamburger = () => {
 const MenuItems = ({ children }) => {
   return (
     <button className="flex flex-1 justify-center items-center py-1 rounded-[4px]
-                       bg-white border border-secondary hover:bg-secondary focus:bg-primary transition-all">
+                       bg-secondary border border-secondary hover:bg-white focus:bg-primary transition-all">
       <p className="font-medium text-h4">{children}</p>
     </button>
   );
@@ -51,7 +51,7 @@ export const Menu = ({ open }) => {
             opacity: { duration: 0.2 },
           }}
           className="overflow-hidden absolute
-                     top-[58px] sm:top-[82px] z-[1] left-0 w-full shadow-[0px_14px_15.2px_-3px_rgba(0,0,0,0.25)]"
+                     top-[56px] sm:top-[82px] z-[1] left-0 w-full shadow-[0px_14px_15.2px_-3px_rgba(0,0,0,0.25)]"
         >
           <div
             className="flex flex-col gap-2 p-3 bg-white rounded-[6px]

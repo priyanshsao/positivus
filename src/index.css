@@ -115,7 +115,7 @@
    /* navbar */
    .navbar {
       @apply
-         absolute 
+         sticky 
          top-0 left-0 
          px-6 sm:px-10 
          py-4 sm:py-6 
@@ -123,6 +123,7 @@
          w-full 
          z-50 
          shadow-md
+         bg-white
    }
    
    .logo {
@@ -174,9 +175,9 @@
       @apply
          flex 
          flex-col 
-         pt-20.5 sm:pt-25 md:pt-0
-         pb-10
-         h-screen md:h-fit
+         pt-10 sm:pt-25 md:pt-0
+         pb-8
+         h-[90vh] md:h-fit
          justify-between gap-5 sm:gap-8 md:gap-3 lg:gap-9 
          max-w-88 md:w-[326px] lg:w-133
    }
@@ -184,15 +185,15 @@
    .header-element-h{
       @apply
          font-medium 
-         text-h2-mob sm:text-[48px] md:text-[36px] lg:text-6xl 
+         text-h3-mob sm:text-[48px] md:text-[36px] lg:text-6xl 
          text-center sm:text-center md:text-start
    }
 
    .header-element-p{
       @apply
          font-regular 
-         text-[15px] sm:text-h3-mob md:text-[16px] lg:text-[20px] 
-         sm:leading-10 md:leading-5 lg:leading-7
+         text-[14px] sm:text-h3-mob md:text-[16px] lg:text-[20px] 
+         leading-5 sm:leading-10 md:leading-5 lg:leading-7
          text-center sm:text-center md:text-start
          text-black
    }
@@ -203,7 +204,7 @@
             items-center 
             justify-center 
             px-8.75 md:px-4
-            py-5 md:py-2
+            py-3 md:py-2
             rounded-default
             w-full md:w-fit 
             bg-black
@@ -213,6 +214,6 @@
    .hero-svg{
       @apply
       w-full  md:w-84 lg:w-150
-      h-full  sm:h-115 md:h-77  lg:h-129
+      h-fit  sm:h-115 md:h-77  lg:h-129
    }
 }
