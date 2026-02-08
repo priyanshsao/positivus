@@ -178,7 +178,7 @@
          pt-10 sm:pt-25 md:pt-0
          pb-8
          h-[90vh] md:h-fit
-         justify-between gap-5 sm:gap-8 md:gap-3 lg:gap-9 
+          gap-5 sm:gap-8 md:gap-3 lg:gap-9 
          max-w-88 md:w-[326px] lg:w-133
    }
 
@@ -214,6 +214,6 @@
    .hero-svg{
       @apply
       w-full  md:w-84 lg:w-150
-      h-fit  sm:h-115 md:h-77  lg:h-129
+      h-full  sm:h-115 md:h-77  lg:h-129
    }
 }

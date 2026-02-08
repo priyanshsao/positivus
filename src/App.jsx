@@ -1,6 +1,6 @@
 import { HeroSvg, Logo, LogoWhite } from "./components/ui/logo";
 import { Button2, ButtonOutline, ButtonPrimary } from "./components/ui/button";
-import { MinusIcon, PlusIcon } from "./components/ui/icon";
+import { MinusIcon, PlusIcon, SeperationLine } from "./components/ui/icon";
 import { TeamCard } from "./components/ui/card";
 import member1 from "./assets/member1.svg";
 import member2 from "./assets/member2.svg";
@@ -249,21 +249,23 @@ function App() {
         </div>
 
         {/* CTA block */}
-        <div className="flex h-fit col-span-full mt-22.5 py-4">
+        <div className="flex h-fit col-span-full mt-10 py-4">
           {/* card */}
-          <div className="flex items-center justify-between px-15 rounded-[45px] bg-[#F3F3F3] w-full h-86.75">
+          <div className="flex items-center justify-between p-10 lg:px-15 rounded-[45px] bg-[#F3F3F3] w-full lg:h-86.75">
             {/* Text&Btn */}
-            <div className="flex flex-col gap-6.5 w-125">
-              <h3>Let’s make things happen</h3>
-              <p>
+            <div className="flex flex-col gap-6.5 w-fit sm:w-125">
+              <h3 className="text-h3-mob text-center">Let’s make things happen</h3>
+              <p className="text-p-mob text-center">
                 Contact us today to learn more about how our digital marketing
                 services can help your business grow and succeed online.
               </p>
-              <Button2>Get your free proposal</Button2>
+               <button className="flex items-center justify-center px-2 py-5 rounded-[14px] w-full lg:w-fit bg-[#191A23] text-white">
+                  <h2 className="text-p-mob">Get your free proposal</h2>
+              </button>
             </div>
 
             {/* Illustration */}
-            <div className=" w-123.5 h-98.5">
+            <div className="hidden w-123.5 h-98.5">
               <svg
                 width="359"
                 height="394"
@@ -310,25 +312,18 @@ function App() {
         </div>
 
         {/* section-heading-2 */}
-        <div className="flex col-span-full gap-10 mt-32.5">
-          {/* label */}
-          <div className="flex flex-col w-fit gap-2.5 px-1.75 rounded-[7px] bg-[#B9FF66] text-black">
-            <h2>Case Studies</h2>
-          </div>
-          {/* text */}
-          <p className="w-145">
-            Explore Real-Life Examples of Our Proven Digital Marketing Success
-            through Our Case Studies
-          </p>
-        </div>
+        <Section title="Case Studies">
+          Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+        </Section>
+        
 
         {/* Case Studies block */}
         <div className="flex flex-col items-center col-span-full mt-10">
           {/* case studies */}
-          <div className="flex w-full justify-center gap-16 px-15 py-17.5 rounded-[45px] bg-[#191A23]">
+          <div className="flex flex-col lg:flex-row w-full justify-center gap-16 px-15 py-16 lg:py-17.5 rounded-[45px] bg-[#191A23]">
             {/* case study-1 */}
             <div className="flex flex-col gap-5">
-              <p className="text-white w-71.5">
+              <p className="text-white lg:max-w-71.5">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
                 increase in sales.
@@ -337,26 +332,12 @@ function App() {
                 Learn more
               </Link>
             </div>
-            {/* line */}
-            <svg
-              width="1"
-              height="186"
-              viewBox="0 0 1 186"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="0.5"
-                y1="1.89494e-08"
-                x2="0.499991"
-                y2="186"
-                stroke="white"
-              />
-            </svg>
+            
+            <SeperationLine/>
 
             {/* case study-2 */}
             <div className="flex flex-col gap-5">
-              <p className="text-white w-71.5">
+              <p className="text-white lg:max-w-71.5">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
                 increase in sales.
@@ -365,26 +346,12 @@ function App() {
                 Learn more
               </Link>
             </div>
-            {/* line */}
-            <svg
-              width="1"
-              height="186"
-              viewBox="0 0 1 186"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="0.5"
-                y1="1.89494e-08"
-                x2="0.499991"
-                y2="186"
-                stroke="white"
-              />
-            </svg>
+            
+            <SeperationLine/>
 
             {/* case study-3 */}
             <div className="flex flex-col gap-5">
-              <p className="text-white w-71.5">
+              <p className="text-white lg:max-w-71.5">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
                 increase in sales.
